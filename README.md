@@ -23,7 +23,7 @@ We will do three things with four examples:
 
 
 
-### Method 1: CSS Animation 
+## Method 1: CSS Animation 
 
 We can animate the graphic without touching Javascript by adding this to the `custom.css` file: 
 
@@ -49,14 +49,14 @@ svg rect {
 
 We can animate certain attributes of an SVG graphic with CSS animation, but it doesn't work for data-driven attributes. 
 
-### Method 2: Javascript Animation -- D3 Transition
+## Method 2: Javascript Animation -- D3 Transition
 
 To change the color of the squares, we need to rewrite the script that assigns fill color to the squares by chaining two style assignments with a [d3-traisition](https://github.com/d3/d3-transition) function in between. 
 
-Replace the Javascript code under `Step 8` with the following:
+Add the following Javascript code after you set the x, y, width, and height attributes of the `days` variable:
+
 
 ```
-
 // start with grey squares
 days.style('fill','lightgrey')
 
@@ -103,7 +103,7 @@ _Read: [12 principles of animation](https://www.gamedeveloper.com/blogs/12-princ
 
 How to achieve it: Use the data index to set up a transition `delay`.
 
-### Method 3: Animation triggered by a button click
+## Method 3: Animation triggered by a button click
 
 In the `<body>` of the HTML, let's create a button above our SVG chart:
 
@@ -130,7 +130,7 @@ We can further split the animations into two steps:
 We can achieve this by creating two additional buttons below the button you just created: 
 
 ```
-// Add two lines below button#btn: 
+<!-- Add two lines below button#btn:  -->
 <button id="btn1">Show days</button>
 <button id="btn2">Show emotions</button>
 
@@ -166,7 +166,7 @@ d3.select('button#btn2').on('click', showEmotions)
 
 As you can tell, clicking a button to trigger an animation isn't the most intuitive user interaction and is prone to errors. That brings us to... 
 
-### Method 4: Animation triggered by page scroll
+## Method 4: Animation triggered by page scroll
 
 Scrolling is a powerful way of pacing a sequence of animation. We are using the [sticky-overlay example](https://russellsamora.github.io/scrollama/sticky-overlay/) in [Scrollama](https://github.com/russellsamora/scrollama) for this tutorial.
 
@@ -180,7 +180,6 @@ First, load the script as how you loaded d3:
 Next, let's set up our DOM elements to match the structure we typically see in a scrollytelling visual: Replace `<div id="my-svg-chart"></div>` with the following:
 
 ```
-
 <div id="scroll-content">  <!-- The overall container -->
     <div id="my-svg-chart"></div> <!-- Your chart -->
     <div id="text"> <!-- Your text -->
