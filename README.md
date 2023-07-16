@@ -170,14 +170,7 @@ As you can tell, clicking a button to trigger an animation isn't the most intuit
 
 Scrolling is a powerful way of pacing a sequence of animation. We are using the [sticky-overlay example](https://russellsamora.github.io/scrollama/sticky-overlay/) in [Scrollama](https://github.com/russellsamora/scrollama) for this tutorial.
 
-First, load the script as how you loaded d3:
-
-```
-<!-- add this below your d3 script -->
-<script src="https://unpkg.com/scrollama"></script>
-```
-
-Next, let's set up our DOM elements to match the structure we typically see in a scrollytelling visual: Replace `<div id="my-svg-chart"></div>` with the following:
+First, let's set up our DOM elements to match the structure we typically see in a scrollytelling visual: Replace `<div id="my-svg-chart"></div>` with the following:
 
 ```
 <div id="scroll-content">  <!-- The overall container -->
@@ -190,6 +183,13 @@ Next, let's set up our DOM elements to match the structure we typically see in a
     </div> 
 </div>
 
+```
+
+Next we need to set up the Javascript portion of Scrollama. Let's load the script as how you loaded d3:
+
+```
+<!-- add this below your d3 script -->
+<script src="https://unpkg.com/scrollama"></script>
 ```
 
 Then, we copy and paste the Javascript code section from the example and modify it to our use. You can copy and paste this section and put it in our script: 
