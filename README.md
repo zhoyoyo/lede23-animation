@@ -309,3 +309,10 @@ Lastly, copy the example's CSS in the style section to `custom.css`:
 
 Now  you have a graphic that animates by scrolling the page.
 
+##### 💦 Exercise Interlude 💦 
+*Create a photo scroll* 
+
+Use the template in the folder `/scrollama-sticky-example` to create a photo gallery. Remember to change three places:
+- HTML: add photos to your `figure` container
+- CSS: make sure the visual is positioned correctly
+- Javascript: Add hooks to make the visual appear inside `handleStepEnter()`
